@@ -19,9 +19,17 @@ class Program
         job2._startYear = 2016;
         job2._endYear = 2025;
 
-        job1.DisplayJobDetails();
-        job2.DisplayJobDetails();
+        // job1.DisplayJobDetails();
+        // job2.DisplayJobDetails();
 
+
+        Resume myResume = new Resume();
+        myResume._jobs.Add(job1);
+        myResume._jobs.Add(job2);
+
+        // Console.WriteLine($"{myResume._jobs[0]._jobTitle}");
+
+        myResume.DisplayResume();
 
     }
 }
