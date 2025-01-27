@@ -20,7 +20,7 @@ public class Word
 
     public bool isHidden()
     {
-        return true;
+        return false;
     }
 
     public string GetDisplayText()
