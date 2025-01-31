@@ -7,7 +7,7 @@ class Program
         Console.WriteLine("Hello World! This is the ScriptureMemorizer Project.");
 
         Reference reference = new Reference("John", 3, 16);
-        string text = "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.";
+        string text = "¡Oh, gloria inmarcesible! ¡Oh, júbilo inmortal!¡En surcos de dolores El bien germina ya! ¡Cesó la horrible noche! La libertad sublime Derrama las auroras De su invencible luz. La humanidad enter, Que entre cadenas gime, Comprende las palabras Del que murió en la cruz";
 
         Scripture scripture = new Scripture(reference, text);
 
