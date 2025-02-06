@@ -1,0 +1,33 @@
+public class Assignment
+{
+    private string _studentName;
+    private string _topic;
+
+    public Assignment(String name, string topic)
+    {
+        _studentName = name;
+        _topic = topic;
+    }
+
+    // public Assignment()
+    // {
+    //     _studentName = "anonymus";
+    //     _topic = "none";
+    // }
+
+    public string GetstudenName()
+    {
+        return _studentName;
+    }
+
+    public string GetTopic()
+    {
+        return _topic;
+    }
+    public string GetSummary()
+    {
+        return $"{GetstudenName()} - {GetTopic()}";
+    }
+
+}
+
