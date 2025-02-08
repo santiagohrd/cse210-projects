@@ -9,12 +9,6 @@ public class Assignment
         _topic = topic;
     }
 
-    // public Assignment()
-    // {
-    //     _studentName = "anonymus";
-    //     _topic = "none";
-    // }
-
     public string GetstudenName()
     {
         return _studentName;

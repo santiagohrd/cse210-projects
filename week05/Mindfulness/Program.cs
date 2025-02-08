@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel;
 
 class Program
 {
@@ -8,7 +9,7 @@ class Program
 
         while (menuOption != 4)
         {
-            Console.WriteLine("Menu options:");
+            Console.WriteLine($"\nMenu options:");
 
             MenuOptions menu = new MenuOptions();
             menu.GetMenu();
@@ -16,25 +17,57 @@ class Program
             Console.Write("Select a choice from the menu: ");
             string option = Console.ReadLine();
             menuOption = int.Parse(option);
-            
-            int duration;
 
             
             if (menuOption == 1)
             {
-                Console.Write("How long, in seconds would you like your session? ");
-                string durationInput = Console.ReadLine();
-                duration = int.Parse(durationInput);
+            
+                Console.Clear();
+                
+                BreathingActivity breathingActivity = new BreathingActivity(0);
 
-                BreathingActivity breathingActivity = new BreathingActivity(duration);
+                breathingActivity.DisplayStartingMessage();
+                breathingActivity.SetDuration();
+                Console.Clear();
+                breathingActivity.Run();
+                
+
+                Console.WriteLine("\n");
+                breathingActivity.DisplayEndingMessage();
+                Console.WriteLine("\n");
+
+
             }
             else if (menuOption == 2)
             {
+                Console.Clear();
+
+                ReflectingActivity reflectingActivity = new ReflectingActivity(0);
+
+                reflectingActivity.DisplayStartingMessage();
+                reflectingActivity.SetDuration();
+                Console.Clear();
+                reflectingActivity.Run();
                 
+                Console.WriteLine("\n");
+                reflectingActivity.DisplayEndingMessage();
+                Console.WriteLine("\n");
+
             }
             else if (menuOption == 3)
             {
+                ListingActivity listingActivity = new ListingActivity(0);   
                 
+                Console.Clear();
+                listingActivity.DisplayStartingMessage();
+                listingActivity.SetDuration();
+
+                Console.Clear();
+
+                listingActivity.Run();
+
+                listingActivity.DisplayEndingMessage();
+
             }
         }
 
