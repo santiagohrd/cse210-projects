@@ -1,0 +1,3 @@
+SimpleGoal:ver,anime,100,False
+EternalGoal:escuchar,musica,200
+ChecklistGoal:bailar,cantar,500,600,4,0
